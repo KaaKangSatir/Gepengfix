@@ -11,7 +11,7 @@ float *m_f3rdPersonCHairMultX, *m_f3rdPersonCHairMultY;
 DECL_HOOK(void, DrawCrosshair)
 {
     float save1 = *m_f3rdPersonCHairMultX; *m_f3rdPersonCHairMultX = 0.52f;
-    float save2 = *m_f3rdPersonCHairMultY; *m_f3rdPersonCHairMultY = 0.450f;
+    float save2 = *m_f3rdPersonCHairMultY; *m_f3rdPersonCHairMultY = 0.510f;
 
     DrawCrosshair();
 
