@@ -1,4 +1,4 @@
-include <mod/amlmod.h>
+#include <mod/amlmod.h>
 
 MYMOD(net.rusjj.gtasa.crosshairfix, GTA:SA Crosshair Fix, 1.0, RusJJ)
 NEEDGAME(com.rockstargames.gtasa)
