@@ -7,7 +7,6 @@ NEEDGAME(com.rockstargames.gtasa)
 static uintptr_t pGTASA = 0;
 float *m_f3rdPersonCHairMultX, *m_f3rdPersonCHairMultY;
 
-#define SET_TO(ptr, value) *(ptr) = (value)
 
 DECL_HOOK(void, DrawCrosshair)
 {
@@ -25,7 +24,7 @@ extern "C" void OnModLoad()
     pGTASA = aml->GetLib("libGTASA.so");
 
     aml->Unprot(pGTASA + 0x952CB0, 8);
-    SET_TO(m_f3rdPersonCHairMultX, pGTASA + 0x952CB0);
-    SET_TO(m_f3rdPersonCHairMultY, pGTASA + 0x952CB4);
+    Set(m_f3rdPersonCHairMultX, pGTASA + 0x952CB0);
+    SET(m_f3rdPersonCHairMultY, pGTASA + 0x952CB4);
     HOOKPLT(DrawCrosshair, pGTASA + 0x672880);
 }
