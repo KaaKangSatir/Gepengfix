@@ -24,6 +24,6 @@ extern "C" void OnModLoad()
 
     aml->Unprot(pGTASA + 0x952CB0, 8);
     SET_TO(m_f3rdPersonCHairMultX, pGTASA + 0x952CB0);
-    SET_TO(m_f3rdPersonCHairMultY, pGTASA + 0x952CB4);
+    SET_TOO(m_f3rdPersonCHairMultY, pGTASA + 0x952CB4);
     HOOKPLT(DrawCrosshair, pGTASA + 0x672880);
 }
