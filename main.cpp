@@ -1,5 +1,7 @@
 #include <mod/amlmod.h>
 
+#define SET_TO
+
 MYMOD(net.rusjj.gtasa.crosshairfix, GTA:SA Crosshair Fix, 1.0, RusJJ)
 NEEDGAME(com.rockstargames.gtasa)
 
