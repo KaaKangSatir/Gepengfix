@@ -24,7 +24,7 @@ jobs:
     - name: Install AndroidModLoader`s mod template...
       run: |
         unzip ./AML_src.zip
-        mv ./AndroidModLoader-1.0.0.2/mod ./mod
+        mv ./AndroidModLoader-1.0.0.3/mod ./mod
 
     - name: Install Android NDK (r25c)...
       uses: nttld/setup-ndk@v1.2.0
