@@ -7,6 +7,8 @@ NEEDGAME(com.rockstargames.gtasa)
 static uintptr_t pGTASA = 0;
 float *m_f3rdPersonCHairMultX, *m_f3rdPersonCHairMultY;
 
+#define SET_TO(ptr, value) *(ptr) = (value)
+
 DECL_HOOK(void, DrawCrosshair)
 {
     float save1 = *m_f3rdPersonCHairMultX; *m_f3rdPersonCHairMultX = 0.52f;
